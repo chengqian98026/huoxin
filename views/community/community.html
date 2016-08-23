@@ -6,6 +6,7 @@
     <ion-tabs class="tabs-striped tabs-top tabs-calm" style="height: 100px" >
         <ion-tab title="CGtop" >
             <ion-nav-view >
+                <ion-content>
                 <div ui-sref="tabs.cg_video" style="position: relative" class="item item-image com_cg" ng-repeat="cgs in cg">
                     <img src="{{cgs.imgsrc}}">
                         <span  class="modals">
@@ -16,10 +17,12 @@
                         </span>
                 </div>
                 <ion-infinite-scroll on-infinite="loadMore3()" immediate-check="false"></ion-infinite-scroll>
+                </ion-content>
             </ion-nav-view>
         </ion-tab>
         <ion-tab title="活动通知">
             <ion-nav-view class="com_ac">
+                <ion-content>
                 <div ui-sref="tabs.acxiangqing" class="list item item-image acbox item-borderless"  ng-repeat="acs in ac">
                     <!--<h2  ><a href="">{{bcast.title1}}</a></h2>-->
                     <img src="{{acs.imgsrc}}">
@@ -31,11 +34,12 @@
 
                 </div>
                 <ion-infinite-scroll on-infinite="loadMore2()" immediate-check="false"></ion-infinite-scroll>
-
+                </ion-content>
             </ion-nav-view>
         </ion-tab>
         <ion-tab title="校园通知">
             <ion-nav-view class="com_tz" >
+                <ion-content>
                 <div ui-sref="tabs.xiangqing"  class="card com_card"  ng-repeat="bcast in bcasts">
                     <h2  ><a href="">{{bcast.title1}}</a></h2>
                     <h4 >{{bcast.title2}}</h4>
@@ -43,21 +47,20 @@
                     <p >{{bcast.content}}</p>
                 </div>
                 <ion-infinite-scroll on-infinite="loadMore()" immediate-check="false"></ion-infinite-scroll>
+                </ion-content>
             </ion-nav-view>
         </ion-tab>
         <ion-tab title="邮件">
             <ion-nav-view >
+                <ion-content>
                 <div class="item item-image item-borderless">
                     <img style="width:76%;margin:10% auto" src="images/none_03.png">
                     <h2 style="font-family: 微软雅黑;font-size: 18px;color: #666">
                         你目前还没有收到邮件哦
                     </h2>
                 </div>
+               </ion-content> 
             </ion-nav-view>
         </ion-tab>
     </ion-tabs>
-    <ion-content >
-
-    </ion-content>
-    
 </ion-view>
