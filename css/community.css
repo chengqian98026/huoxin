@@ -1,6 +1,7 @@
 .com_tz ion-tab {
     color: #fff;
 }
+#community .has-tabs-top{top:0;}
  #community .tabs .tab-title{
     color: #fff;
     font-size: 16px;
