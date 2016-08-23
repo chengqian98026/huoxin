@@ -1,0 +1,31 @@
+<ion-view>
+    <ion-nav-title>
+        <h2 class="title">作品盒子</h2>
+        <i class="button button-icon ion-ios-search"></i>
+    </ion-nav-title>
+    <ion-content style="background: #f7f7f7;">
+        <ion-list>
+            <ion-item ng-repeat="item in date" style="width:48%;float: left;margin:12px 1% 0 1%;border-radius:10px;">
+                <div class="honme_col_img">
+                    <img ng-src="{{item.imgUrl}}" style="width:100%;">
+                    <h4 style="height:40px;line-height: 40px;font-size: 18px;"><i style="width:33px;height:33px;display: inline-block"><img ng-src="{{item.touxiang}}" style="width:100%;border-radius:50%;vertical-align: middle;"></i>{{item.name}}</h4>
+                    <p>{{item.grade}}</p>
+                </div>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll on-infinite="loadMore()"></ion-infinite-scroll>
+        <!--<div class="row" >-->
+            <!--<div class="col">-->
+
+            <!--</div>-->
+            <!--<div class="col">-->
+                <!--<div class="honme_col_img">-->
+                    <!--<img src="images/home_col2.png" style="width:100%;">-->
+                    <!--<h4>黄玉婷</h4>-->
+                    <!--<p>1512期UI视觉设计师班1班</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </ion-content>
+</ion-view>

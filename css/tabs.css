@@ -1,0 +1,11 @@
+#tabs .tab-title{color:#000;}
+#tabs .ion-home-on{background: url("../images/ion-home-on.png") no-repeat center 2px;width:28px;height:28px;background-size: 100% ;}
+#tabs .ion-home-off{background: url("../images/ion-home-off.png") no-repeat center 2px;width:28px;height:28px;background-size: 100% ;}#tabs .ion-home-on{background: url("../images/ion-home-on.png") no-repeat center 2px;width:28px;height:28px;background-size: 100% ;}
+#tabs .ion-aide-on{background: url("../images/ion-aide-on.png") no-repeat center 2px;width:28px;height:28px;background-size: 100% ;}
+#tabs .ion-aide-off{background: url("../images/ion-aide-off.png") no-repeat center 2px;width:28px;height:28px;background-size: 100% ;}#tabs .ion-home-on{background: url("../images/ion-home-on.png") no-repeat center 2px;width:28px;height:28px;background-size: 100% ;}
+#tabs .ion-community-on{background: url("../images/ion-community-on.png") no-repeat center 2px;width:28px;height:28px;background-size: 100% ;}
+#tabs .ion-community-off{background: url("../images/ion-community-off.png") no-repeat center 2px;width:28px;height:28px;background-size: 100% ;}#tabs .ion-home-on{background: url("../images/ion-home-on.png") no-repeat center 2px;width:28px;height:28px;background-size: 100% ;}
+
+#aide_zhuangtai .scroll{height:100%;}
+#aide_zhuangtai .has-header{top:0;}
+

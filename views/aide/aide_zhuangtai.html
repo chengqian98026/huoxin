@@ -1,0 +1,40 @@
+<ion-view view-title="火星助手" id="aide_zhuangtai" ng-controller="aideZhuangtaiCtrl">
+    <ion-content>
+        <div class="stable-bg" style="padding:3.5rem 0">
+            <textarea class="light-bg" style="width:93%;margin:3.5rem auto 2.7rem;border: 1px solid #ccc;height:10rem;border-radius: 8px;font-size:1.2rem;line-height: 1.2rem;"></textarea>
+            <div class="calm-bg" style="border-radius: 1.8rem;width:13rem;height: 3.5rem;text-align: center;line-height:3.5rem;color:#fff;font-size: 1.2rem;margin:0 auto;">快来帮帮我</div>
+        </div>
+        <div>
+            <div>
+                <div class="row" style="height:4rem;border-bottom:1px solid #ccc;line-height:4rem;">
+                    <div class="col" style="text-align: center;">提交时间</div>
+                    <div class="col" style="text-align: center;">处理状态</div>
+                    <div class="col" style="text-align: center;">处理评价</div>
+                </div>
+                <div class="row" style="height:4rem;border-bottom:1px solid #ccc;line-height:4rem;">
+                    <div class="col" style="text-align: center;"><span style="display: block;line-height: 2rem;">13：23</span><i style="display: block;line-height: 1rem;">2016/4/29</i></div>
+                    <div class="col" style="text-align: center;">处理中</div>
+                    <div class="col" style="text-align: center;"><i class="calm-bg" style="width:4.0rem;height:2rem;border-radius:1rem;display: block;margin: 1rem auto;line-height: 2rem;color:#fff;font-size: 1rem;" ng-click="display()">评价</i></div>
+                </div>
+                <div class="row" style="height:4rem;line-height:4rem;">
+                    <div class="col" style="text-align: center;"><span style="display: block;line-height: 2rem;">13：23</span><i style="display: block;line-height: 1rem;">2016/4/29</i></div>
+                    <div class="col" style="text-align: center;">已处理</div>
+                    <div class="col" style="text-align: center;">已评价</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" style="height:100%;height:100%;background:rgba(0,0,0,0.5)" ng-show="haoping">
+            <div class="light-bg" style="width:27rem;height:17rem;border:1px solid #ccc;border-radius:1rem;position:absolute;left:0;right:0;bottom:0;top:0;margin: auto;">
+                <div style="text-align: center;/*height:rem;*/margin:4.5rem auto 2.5rem;">
+                    <i style="width:4.25rem;height:4.25rem;display: inline-block"><img src="images/haostar.png" style="width:100%;"> </i>
+                    <i style="width:4.25rem;height:4.25rem;display: inline-block"><img src="images/haostar.png" style="width:100%;"> </i>
+                    <i style="width:4.25rem;height:4.25rem;display: inline-block"><img src="images/haostar.png" style="width:100%;"> </i>
+                    <i style="width:4.25rem;height:4.25rem;display: inline-block"><img src="images/star.png" style="width:100%;"> </i>
+                    <p style="text-align: center;">很满意</p>
+                </div>
+                <div class="button button-full button-calm" style="border-radius:0 0 1rem 1rem;margin:0;font-size:1.6rem;font-weight: bold;" ng-click="notdisplay()">确定</div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

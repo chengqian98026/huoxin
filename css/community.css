@@ -1,0 +1,145 @@
+.com_tz ion-tab {
+    color: #fff;
+}
+ #community .tabs .tab-title{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:微软雅黑;
+}
+#community .tabs-calm .tabs{
+    height: 56px;
+    line-height: 56px;
+}
+.com_tz .com_card{
+    padding:15px 12px;
+    position: relative;
+}
+.com_tz .com_card h2 a{
+    font-size: 18px; color: #606060;font-weight: 700;
+    text-decoration: none;
+}
+.com_tz .com_card h4{
+    font-size: 14px; color: #19adb9;font-weight: 600
+}
+.com_tz .com_card span{
+    display: block;position: absolute;top:25px;right: 16px;
+}
+.com_tz .com_card p{
+   font-size: 14px; color: #606060;font-weight: 500
+}
+#community .blank{
+    height: 30px;
+}
+.com_ac .acbox{
+    position: relative;
+    height: 28rem;
+    margin-bottom: -10px;
+}
+.com_ac h2,.com_ac  p{
+    text-align: left;
+    padding-left: 15px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #606060;
+    font-family: 微软雅黑;
+}
+.com_ac h2{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000;
+}
+.com_ac span{
+    display: block;
+    position: absolute;
+    color: #606060;
+    height: 30px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    padding-left: 20px;
+}
+.com_ac .sl{
+    left: 15px;
+    bottom:2rem;
+}
+.com_ac .sr{
+    right: 50px;
+   bottom:2rem;
+}
+.com_cg {
+    position: relative;
+}
+.com_cg  .modals{
+    position: absolute;display: block;width:100%;height: 100%;
+    background-color: rgba(0,0,0,0.5);left: 0;top:0;
+
+}
+.com_cg  .modals .kuang{
+    display: block;width:190px;
+    height: 85px;border:3px solid #fff;text-align: center;
+    position: absolute;
+    left:50%;top:50%;transform: translate(-50%,-50%);
+}
+.com_cg  .modals .kuang h2{
+    color: #fff;font-family: 微软雅黑;font-size: 18px;line-height: 45px;
+}
+.com_cg  .modals .kuang h4{
+    color: #fff;font-family: 微软雅黑;font-size: 16px;line-height: 20px;
+}
+html{
+    font-size: 62.5%;
+}
+.abox h2,.abox p{
+    text-align: left;
+    padding-left: 15px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #606060;
+    font-family: 微软雅黑;
+}
+.abox{
+    position: relative;
+    height: 320px;
+}
+.abox h2{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000;
+}
+.abox span{
+    display: block;
+    position: absolute;
+    color: #606060;
+    height: 30px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.abox .sl{
+    left: 10px;
+    bottom:1rem;
+}
+.abox .sr{
+    right:10px;
+    bottom:1rem;
+}
+.abox h2,.abox p{
+    text-align: left;
+    padding-left: 15px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #606060;
+    font-family: 微软雅黑;
+}
+.abox{
+    padding:10px;;
+}
+.abox h2{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000;
+}
+#xiangqing .bar-calm{background:#19adb9;}
+.fxbtn:hover img{
+    transform: scale(1.1);
+}

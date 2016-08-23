@@ -1,0 +1,69 @@
+<ion-view view-title="详情" ng-controller="homeCtrl">
+
+    <ion-content >
+        <div  class="item item-avatar">
+            <img src="images/stutouxiang_03.png">
+            <h2 style="font-size: 2rem;vertical-align: middle
+        ;color: #505050;font-weight: 600;vertical-align: middle;"><span style="vertical-align: middle">李雷</span><span style="font-size: 1.2rem;
+        color: #fff;display: inline-block;padding: 5px;text-align: center;background-color:
+         #19adb9;border-radius: 5px;margin-left: 1rem;
+         font-weight: normal">
+            总排名:   <span style="margin-left: 1rem"> 11</span>
+        </span></h2>
+            <h4 style="color: #707070;line-height: 2rem;padding-left: 0.2rem;font-size: 1.5rem;font-weight: 500">班级:1603期视觉设计师班1版</h4>
+            <h4 style="color: #707070;line-height: 2rem;padding-left: 0.2rem;font-size: 1.5rem;font-weight: 500">作业提交率:100% 考勤率:97%</h4>
+        </div>
+        <h2 style="margin-top: -0.5rem;margin-bottom: -2rem">
+            <a  style="font-size: 2rem;color: #606060">
+                <span style="vertical-align: middle"><img src="images/stuicon_03.png" style="width: 2.3rem;margin-left: 4%"></span> <span style=";vertical-align: middle"></span>专业成绩
+            </a>
+        </h2>
+        <div class="tongjitu" style="width: 100%;height: 17rem;background: url('images/tongjitu_02.png') no-repeat center ;background-size: 102%">
+            <ul class="ul1" ng-repeat="stus in stuclass">
+                <li on-hold="changeshow()"  class="{{stus.classname}}">
+                    <!--on-tap="changeshow($index)"-->
+                    <a class="a1" style="display: block;text-align: center;color: #2ac598;"
+                       ng-show="stushow"
+                    >
+                        {{stus.title}}<br>{{stus.title2}}
+                    </a>
+                    <a class="a2" style="display: block;text-align: center;color: #2ac598"
+                       ng-show="stushow"
+                    >
+                        {{stus.rank}}
+                    </a>
+                </li>
+            </ul>
+            <ul class="ul2">
+                <li>第一周</li>
+                <li>第二周</li>
+                <li>第三周</li>
+                <li>第四周</li>
+                <li>第五周</li>
+            </ul>
+        </div>
+        <h2 style="margin-top: -1.5rem;margin-bottom: -2rem">
+            <a  style="font-size: 2rem;color: #606060">
+                <span style="vertical-align: middle"><img src="images/sic_03.png" style="width: 2.3rem;margin-left: 4%"></span> <span style=";vertical-align: middle"></span>
+                职业素质分
+            </a>
+        </h2>
+        <div ui-sref="tabs.propoint" class="jindu" style="width:91.6%;margin:2.5rem auto 1rem;height: 1.7rem;background-color:#a2d9f4 ;border-radius: 0.85rem;position: relative">
+            <div class="curjindu" style="width:97%;height: 1.7rem;background: radial-gradient(#56d2ae ,#96d8e9 );border-radius: 0.85rem;position: absolute;left: 0;top:0">
+
+            </div>
+        </div>
+        <div class="tj" style="position:relative;margin: 1rem 0 0;background: url('images/stubg_02.png')  no-repeat center top;height: 17rem;background-size: 100%">
+            <h2 style="margin-top: -0.5rem;">
+                <a  style="font-size: 2rem;color: #fff">
+                    <span style="vertical-align: middle"><img src="images/shuicon_03.png" style="width: 2.3rem;margin-left: 4%"></span> <span style=";vertical-align: middle"></span>
+                    击败了85%的同学
+                </a>
+            </h2>
+
+        </div>
+        <div style="position: absolute;height: 4rem;width:100%;bottom:0;background:#2da795;text-align: center">
+            <img src="images/xiasd_04.png" style="width: 2.5rem;">
+        </div>
+    </ion-content>
+</ion-view>

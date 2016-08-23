@@ -1,0 +1,11 @@
+#install .toux{height:71px;line-height:71px;padding: 0 16px;margin:17px 0 34px 0}
+#install .toux img{width:47px;height:47px;border-radius: 50%;margin:12px 0;float: right;}
+#install .list .shengji{margin:22px 0;}
+#install .list .shengji span{float: right;}
+#install .list .item{border: none;}
+#install .tuisong .item-toggle{border-top:1px #e1e1e1 solid; border-bottom:1px #e1e1e1 solid; }
+
+
+#revise{background:#f7f7f7;}
+#revise .list-inset{background:#f7f7f7;}
+#revise .item-input{margin:9px 0;border-radius: 6px;}

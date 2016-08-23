@@ -1,0 +1,63 @@
+<ion-view   hide-nav-bar="true" id="community" ng-controller="communityctrl">
+    <ion-nav-bar  class="bar-calm">
+        <ion-nav-back-button class="button button-clear"></ion-nav-back-button>
+    </ion-nav-bar>
+    <div class="list blank"></div>
+    <ion-tabs class="tabs-striped tabs-top tabs-calm" style="height: 100px" >
+        <ion-tab title="CGtop" >
+            <ion-nav-view >
+                <div ui-sref="tabs.cg_video" style="position: relative" class="item item-image com_cg" ng-repeat="cgs in cg">
+                    <img src="{{cgs.imgsrc}}">
+                        <span  class="modals">
+                            <span class="kuang" >
+                                <h2 >{{cgs.title1}}</h2>
+                                <h4 >{{cgs.title2}}</h4>
+                            </span>
+                        </span>
+                </div>
+                <ion-infinite-scroll on-infinite="loadMore3()" immediate-check="false"></ion-infinite-scroll>
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="活动通知">
+            <ion-nav-view class="com_ac">
+                <div ui-sref="tabs.acxiangqing" class="list item item-image acbox item-borderless"  ng-repeat="acs in ac">
+                    <!--<h2  ><a href="">{{bcast.title1}}</a></h2>-->
+                    <img src="{{acs.imgsrc}}">
+                    <h2 >{{acs.title}}</h2>
+                    <p >{{acs.content}}</p>
+                    <span style="background: url('images/acicon_03.png')left top no-repeat;background-size: 30%" class="sl">{{acs.person}}</span>
+                    <span style="background: url('images/acicon_05.png')left top no-repeat;background-size: 30%" class="sr">{{acs.date}}</span>
+
+
+                </div>
+                <ion-infinite-scroll on-infinite="loadMore2()" immediate-check="false"></ion-infinite-scroll>
+
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="校园通知">
+            <ion-nav-view class="com_tz" >
+                <div ui-sref="tabs.xiangqing"  class="card com_card"  ng-repeat="bcast in bcasts">
+                    <h2  ><a href="">{{bcast.title1}}</a></h2>
+                    <h4 >{{bcast.title2}}</h4>
+                    <span >{{bcast.date}}</span>
+                    <p >{{bcast.content}}</p>
+                </div>
+                <ion-infinite-scroll on-infinite="loadMore()" immediate-check="false"></ion-infinite-scroll>
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="邮件">
+            <ion-nav-view >
+                <div class="item item-image item-borderless">
+                    <img style="width:76%;margin:10% auto" src="images/none_03.png">
+                    <h2 style="font-family: 微软雅黑;font-size: 18px;color: #666">
+                        你目前还没有收到邮件哦
+                    </h2>
+                </div>
+            </ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+    <ion-content >
+
+    </ion-content>
+
+</ion-view>

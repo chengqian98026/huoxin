@@ -1,0 +1,27 @@
+<ion-view view-title="修改密码" id="revise">
+    <ion-content>
+        <div>
+            <form name="shippingForm" class="list-inset" novalidate>
+                <label class="item item-input item-input-inset" style="border: none;">
+                    <span class="input-label col-10">原密码</span>
+                    <input type="password" name="password_yuan" ng-model="password_yuan" required >
+                </label>
+                <label class="item item-input item-input-inset " style="border: none;">
+                    <span class="input-label col-10">新密码</span>
+                    <input type="password" name="password_xin" ng-model="password_xin" required ng-pattern="/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/">
+                </label>
+                <label class="item item-input item-input-inset " style="border: none;">
+                    <span class="input-label col-10">确认新密码</span>
+                    <input type="password" name="password_queren" ng-model="password_queren" required ng-pattern="/^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/">
+                </label>
+                <label class="item-input item-input-inset">
+                    <button class="button button-positive button-block" ng-disabled="shippingForm.$invalid" ui-sref="tabs.install" style="border-radius: 2.175rem;height:4.35rem;background:#19adb9">
+                        提交
+                    </button>
+                </label>
+            </form>
+
+        </div>
+
+    </ion-content>
+</ion-view>
