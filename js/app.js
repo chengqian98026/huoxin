@@ -24,6 +24,19 @@ myapp.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider){
             templateUrl: "views/home/revise.html"
         }}
     });
+     $stateProvider.state("tabs.login",{
+        url:"/login",
+        views:{"tab-home": {
+            templateUrl: "views/home/login.html"
+        }}
+    });
+     $stateProvider.state("tabs.forgetPassword",{
+        url:"/forgetPassword",
+        views:{"tab-home": {
+            templateUrl: "views/home/forgetPassword.html",
+            controller:"forgetPasswordCtrl"
+        }}
+    });
 
     $stateProvider.state("tabs.install",{
         url:"/install",

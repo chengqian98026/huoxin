@@ -1,7 +1,7 @@
 /**
  * Created by hxsd on 2016/8/17.
  */
-angular.module("myapp").controller("homeCtrl",function($scope,$ionicPopup,$http){
+angular.module("myapp").controller("homeCtrl",function($scope,$ionicPopup,$http,$state){
     $scope.reg=false;
     $scope.register=function(){
          $scope.reg=true;
@@ -35,6 +35,18 @@ angular.module("myapp").controller("homeCtrl",function($scope,$ionicPopup,$http)
         }).finally(function () {
             $scope.$broadcast("scroll.infiniteScrollComplete")
         });
-    }
+    };
+    $scope.showConfirm = function() {
+        var confirmPopup = $ionicPopup.confirm({
+            title: '是否退出',
+            template: '你确定要退出吗'
+        });
+        confirmPopup.then(function(res) {
+            if(res) {
+                $state.go("tabs.home");
+            }
+        });
+    };
+
 
 });

@@ -1,7 +1,6 @@
 .com_tz ion-tab {
     color: #fff;
 }
-#community .has-tabs-top{top:0;}
  #community .tabs .tab-title{
     color: #fff;
     font-size: 16px;
@@ -12,6 +11,8 @@
     height: 56px;
     line-height: 56px;
 }
+#community .has-tabs-top {top:0}
+
 .com_tz .com_card{
     padding:15px 12px;
     position: relative;
