@@ -5,10 +5,11 @@ angular.module("myapp").controller("forgetPasswordCtrl",function($scope,$interva
     $scope.codetime = "获取验证码";
     
     var timer = null;
-
+    $scope.color="#27b4c1";
     $scope.yanzhengma=function(){
         if(timer!=null)return false;
         $scope.time = 60;
+        $scope.color="#9ad7db";
         timer = $interval(function(){
             $scope.time = $scope.time - 1;
             $scope.codetime = $scope.time+"秒后点击重发";
